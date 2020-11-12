@@ -2,7 +2,10 @@
   "name": "newapp",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": ".",
   "dependencies": {
+    "electron-packager": "^15.1.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^5.1.0",
@@ -14,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "estart": "electron .",
+    "package": "electron-packager ~/reactdemo/build dist --all --out --electron-version 1.7.10 "
   },
   "eslintConfig": {
     "extends": "react-app"
